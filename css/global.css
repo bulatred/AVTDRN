@@ -1,0 +1,202 @@
+/* --- Базовые сбросы и универсальные стили --- */
+html, body {
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  
+  background: #fff;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+img, .product-image, .main-image, .news-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* --- Адаптивность: только для мобильных и планшетов --- */
+@media (max-width: 900px) {
+  .container {
+    max-width: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  /* Шапка */
+  .header_top,
+  .header_top .container {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 10px !important;
+  }
+  .header_icons {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .search-form {
+    width: 100% !important;
+    min-width: 0 !important;
+    margin: 0 0 10px 0 !important;
+    padding: 0 8px !important;
+    height: 40px !important;
+  }
+  .search-form__txt {
+    font-size: 16px !important;
+    padding: 8px 0 !important;
+  }
+  .search-form__image {
+    width: 20px !important;
+    height: 20px !important;
+  }
+
+  /* Карточки */
+  .cards, .leaders-cards, .news-cards {
+    flex-wrap: wrap !important;
+    gap: 16px !important;
+    justify-content: center !important;
+  }
+  .card, .leader-card, .recommend-card, .news-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 340px !important;
+    margin: 0 auto !important;
+  }
+  .cards {
+    flex-direction: column;
+    gap: 16px;
+    align-items: stretch;
+  }
+  .card-link .card, .card {
+    width: 100%;
+    min-width: 0;
+    min-height: unset;
+  }
+
+  /* Каталог и главная */
+  .catalog-row {
+    flex-direction: column !important;
+    gap: 20px !important;
+  }
+  .catalog-left, .catalog-right {
+    max-width: 100% !important;
+    width: 100% !important;
+    justify-content: center !important;
+  }
+
+  /* Корзина и оформление заказа */
+  .checkout-layout {
+    flex-direction: column !important;
+    gap: 30px !important;
+  }
+  .checkout-form-window {
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: unset !important;
+    margin-top: 0 !important;
+    border-radius: 10px !important;
+    padding: 24px 10px !important;
+    box-sizing: border-box !important;
+  }
+  .cart-actions-row {
+    flex-direction: column !important;
+    gap: 20px !important;
+    align-items: stretch !important;
+  }
+  .cart-coupon-block, .cart-checkout-block {
+    max-width: 100% !important;
+    align-items: stretch !important;
+  }
+
+  /* Формы */
+  .checkout-row {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .checkout-field {
+    width: 100% !important;
+  }
+  .checkout-delivery-row, .checkout-pay-row {
+    flex-direction: column !important;
+  }
+  .delivery-option, .pay-option {
+    border-radius: 8px !important;
+    border-right: 1.5px solid #ddd !important;
+    margin-bottom: 10px !important;
+    padding: 14px 10px !important;
+  }
+
+  /* Футер */
+  .footer-container {
+    flex-direction: column !important;
+    gap: 24px !important;
+    align-items: stretch !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .footer-col {
+    min-width: 0 !important;
+  }
+
+  /* Кнопки и ряды */
+  .product-info {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    padding: 18px 8px !important;
+  }
+  .buy-btn, .one-click-btn, .compare-btn, .favorite-btn {
+    width: 100% !important;
+    min-width: 0 !important;
+    font-size: 16px !important;
+    padding: 12px 0 !important;
+    margin-bottom: 10px !important;
+  }
+  .compare-fav-row {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+  }
+  .header_top .container {
+    gap: 6px !important;
+  }
+  .section-title, .leaders-title, .newss-title {
+    font-size: 17px !important;
+    top: 0 !important;
+  }
+  .footer {
+    padding: 30px 0 0 0 !important;
+    font-size: 13px !important;
+  }
+  .footer-bottom {
+    font-size: 12px !important;
+    padding: 12px 0 8px 0 !important;
+  }
+  .search-form {
+    padding: 0 4px !important;
+    height: 36px !important;
+  }
+  .search-form__txt {
+    font-size: 15px !important;
+    padding: 6px 0 !important;
+  }
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVTDRN Cart</title>
+    <link rel="stylesheet" href="../css/cart.css" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+     <header class="header_top">
+    <div class="container">
+      <a href="index.html">
+        <img src="../icons; images/avtologo.png" alt="AVTDRN Logo" class="logo" />
+      </a>
+
+      <div class="search-form">
+        <input class="search-form__txt" type="text" placeholder="Поиск по сайту" />
+        <button class="search-form__btn">
+          <img class="search-form__image" src="../icons; images/search.svg" alt="Поиск" />
+        </button>
+      </div>
+
+      <div class="header_icons">
+        <div class="icon_block">
+          <img src="../icons; images/person.svg" alt="Войти" />
+          <span>Войти</span>
+        </div>
+        <div class="icon_block">
+          <img src="../icons; images/favour.svg" alt="Избранное" />
+          <span>Избранное</span>
+        </div>
+        <div class="icon_block">
+          <img src="../icons; images/cart.svg" alt="Корзина" />
+          <span>Корзина</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+        <div class="breadcrumb">АВТО-ДРОН / Моя корзина</div>
+        <div class="cart-title">Моя корзина</div>
+        <div class="cart-total">Бонус-счет: 0 ₽</div>
+        <div class="cart-item">
+            <img class="item-image" src="../icons; images/minis.png" alt="Muben Mini S WiFi">
+            <div class="item-name">Muben Mini S WiFi</div>
+            <div class="item-quantity">
+                Количество:
+                <div class="quantity-controls">
+                    <button class="quantity-btn">-</button>
+                    <input class="quantity-input" type="text" value="1" readonly>
+                    <button class="quantity-btn">+</button>
+                </div>
+            </div>
+            <div class="item-price">7980 р. <span class="item-old-price">9999 р.</span></div>
+            <div class="remove-btn">Удалить из корзины</div>
+        </div>
+        <div class="cart-item">
+            <img class="item-image" src="../icons; images/gift.png" alt="Gift">
+            <div class="item-name">Ваш подарок: Не забудьте выбрать свой подарок</div>
+            <div class="item-quantity">
+                Количество:
+                <div class="quantity-controls">
+                    <button class="quantity-btn">-</button>
+                    <input class="quantity-input" type="text" value="1" readonly>
+                    <button class="quantity-btn">+</button>
+                </div>
+            </div>
+            <div class="item-price">Бесплатно</div>
+            <div class="remove-btn">Удалить из корзины</div>
+        </div>
+        <div class="cart-actions-row">
+          <div class="cart-coupon-block">
+            <input class="coupon-input" type="text" placeholder="Введите код купона">
+            <button class="activate-coupon">Активировать купон</button>
+            <div class="order-note">
+              Введите ваш промокод выше<br>
+              Скидка, бонусный счёт и акция "Подарки" не суммируются.
+            </div>
+          </div>
+          <div class="cart-checkout-block">
+            <a href="checkout.html" class="card-link">
+            <button class="checkout-btn">Оформить заказ</button>
+            </a>
+          </div>
+        </div>
+    </div>
+    <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-col">
+      <div class="footer-title">О нас</div>
+      <a href="#">О компании</a>
+      <a href="#">История</a>
+      <a href="#">Контакты</a>
+      <a href="#">Дипломы и сертификаты</a>
+      <a href="#">Лучший менеджер</a>
+      <a href="#">Работа у нас</a>
+      <a href="#">Карта сайта</a>
+      <a href="#">Все магазины</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-title">Оплата и доставка</div>
+      <a href="#">Способы оплаты</a>
+      <a href="#">Способы доставки</a>
+      <a href="#">Гарантии и сервис</a>
+      <a href="#">Дилерам</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-title">Каталог</div>
+      <a href="#">Подарки</a>
+      <a href="#">Комбо-устройства</a>
+      <a href="#">Радар-детекторы</a>
+      <a href="#">Видеорегистраторы</a>
+      <a href="#">Карты памяти</a>
+      <a href="#">Аксессуары</a>
+      <a href="#">УЦЕНКА</a>
+      <a href="#">ШОК-ЦЕНА</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-title">Подпишись</div>
+      <div class="footer-subscribe-text">Узнай первым о новых акциях, подарках и обзорах</div>
+      <form class="footer-subscribe-form">
+        <input type="email" placeholder="Ваш e-mail" class="footer-input" />
+        <button type="submit" class="footer-subscribe-btn">Подписаться</button>
+      </form>
+    </div>
+    <div class="footer-col">
+      <div class="footer-title">Горячая линия</div>
+      <div class="footer-phone">8 800 555-35-35</div>
+      <div class="footer-social-title">Мы в соцсетях</div>
+      <div class="footer-socials">
+        <img src="../icons; images/vk.png" alt="VK" />
+        <img src="../icons; images/tg.png" alt="Telegram" />
+        <img src="../icons; images/wh.png" alt="WhatsApp" />
+      </div>
+      <div class="footer-pay-title">Способы оплаты</div>
+      <div class="footer-payments">
+        <img src="../icons; images/sposoboplat.png" alt="Visa" />
+
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2024 AVTDRN. Все права защищены.
+  </div>
+</footer>
+</body>
+</html>
